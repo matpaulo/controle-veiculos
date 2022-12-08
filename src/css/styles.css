@@ -1,0 +1,62 @@
+body{
+    background-color: #FFE4C4;
+    font-size: 18px;
+    display: flex;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.header{
+    display: flex;
+    align-items: flex-start;    
+}
+
+h1{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.content .tabs{
+    margin-top: 15px;
+    display: flex;
+}
+
+.content .tabs .tab{
+    background-color: #DCDCDC;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.content .tabs .tab.selected{
+    background-color: #808080;
+}
+
+.content .tabs .tab:hover{
+    background-color: #4F4F4F;
+}
+
+.information-tabs{
+    background-color: white;
+    width: 95%;
+    height: 780px;
+    position: absolute;
+}
+
+.information-tabs .description {
+    max-height: 780px;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.information-tabs .informations{
+    display: none;
+}
+
+.information-tabs .informations.selected{
+    display: block;
+}
